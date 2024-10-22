@@ -178,7 +178,7 @@ caption_text = (
     f"  \\_Nhà mạng: Viettel\n"
     f"  \\_Mã kênh: t008\\_gll\\_pvscttvt9\n"
     f"  \\_Loại kênh: ILL\n"
-    "💎PVS trân trọng gửi thông tin đến quý khách hàng\n\n"
+    "PVS trân trọng gửi thông tin đến quý khách hàng\n\n"
     "🤖 A message from PVS BOT\\!"
 )
 
