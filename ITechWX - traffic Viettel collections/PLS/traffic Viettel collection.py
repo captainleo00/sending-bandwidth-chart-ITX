@@ -169,6 +169,10 @@ screenshot_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'traf
 time.sleep(10)
 driver.save_screenshot(screenshot_path)
 
+
+time.sleep(300) 
+driver.quit()
+
 img = Image.open(screenshot_path)
 
 cropped_img = img.crop((149.5,56 , 1145.5, 768))
@@ -204,6 +208,3 @@ async def main():
 # Chạy chương trình
 if __name__ == "__main__":
     asyncio.run(main())
-
-time.sleep(300) 
-driver.quit()
