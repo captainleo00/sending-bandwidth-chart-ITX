@@ -13,10 +13,20 @@ from selenium.webdriver.support.ui import Select
 from PIL import Image
 from telegram import Bot
 import asyncio
+from selenium.webdriver.chrome.options import Options
+
+
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
+chrome_options.add_argument("--disable-gpu")  # Có thể thử nếu gặp lỗi đồ họa
+chrome_options.add_argument("--remote-debugging-port=9222")
 
 # Create driver for chrome control
 
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
 # Go to web Viettel monitor
 
